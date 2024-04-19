@@ -1,5 +1,5 @@
 <section class="kanban-list">
-  <h1 class="list-title"> {{ capitalize(type) }}</h1>
+  <h1 class="list-title"> {{ type }}</h1>
   @for (task of tasks; track task.id) {
   <app-list-item [task]="task" />
   }

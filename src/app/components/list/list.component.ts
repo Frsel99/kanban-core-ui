@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { TaskModel, TaskStatusEnum } from '../../models/list';
 import { ListItemComponent } from '../list-item/list-item.component';
-import { CapitalizeHelper } from '../../helpers/capitalize';
 
 
 @Component({
@@ -12,7 +11,6 @@ import { CapitalizeHelper } from '../../helpers/capitalize';
   styleUrl: './list.component.css',
 })
 export class ListComponent {
-  capitalize = CapitalizeHelper
   @Input() type: string = '';
   @Input() tasks: TaskModel[] | [] = [];
 }

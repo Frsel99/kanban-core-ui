@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { TaskModel, TaskStatusEnum } from '../../models/list';
 import { ListComponent } from '../list/list.component';
-import { CapitalizeHelper } from '../../helpers/capitalize';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +11,6 @@ import { CapitalizeHelper } from '../../helpers/capitalize';
 })
 export class HomeComponent {
   filters = Object.values(TaskStatusEnum);
-  capitalize = CapitalizeHelper;
   tasks = [
     {
       id: 1,
