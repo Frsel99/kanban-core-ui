@@ -1,0 +1,7 @@
+.kanban-list {
+ @apply bg-background-300 w-96 h-fit p-4 flex flex-col gap-4 rounded-lg
+}
+
+.list-title {
+  @apply text-center
+}

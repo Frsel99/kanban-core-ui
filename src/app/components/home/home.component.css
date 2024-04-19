@@ -1,0 +1,23 @@
+.navbar {
+  @apply bg-background-200 text-white p-6;
+}
+
+.items-wrapper {
+  @apply flex flex-row flex-auto justify-end gap-10 mr-10 text-lg font-bold;
+}
+
+.tasks-menu {
+  @apply bg-background-200 mt-4 ml-12 mr-12 p-4 flex justify-start gap-10 rounded-lg;
+}
+
+.add-task-button {
+  @apply bg-background-400 text-white ml-10 p-1 pl-3 pr-3 rounded-lg;
+}
+
+.filter-dropdown {
+  @apply bg-background-400 text-white text-center rounded-lg;
+}
+
+.tasks-wrapper {
+  @apply bg-background-200 mt-4 h-full rounded-lg flex gap-12 justify-around pt-6 pb-6;
+}

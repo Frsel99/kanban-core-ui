@@ -1,0 +1,11 @@
+.task-wrapper {
+  @apply bg-background-400 p-4 rounded-lg
+}
+
+.task-info {
+  @apply mb-4
+}
+
+.task-title {
+  @apply mb-1
+}

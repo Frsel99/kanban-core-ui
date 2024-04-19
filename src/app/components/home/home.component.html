@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <ul class="items-wrapper">
+    <a>Login</a>
+    <a>About Us</a>
+    <a>Support</a>
+  </ul>
+</nav>
+<div class="tasks-menu">
+  <button class="add-task-button">Add Task</button>
+  <select class="filter-dropdown">
+    @for (filter of filters; track filter) {
+    <option>{{ filter }}</option>
+    }
+  </select>
+</div>
+<section class="tasks-wrapper">
+  @for (filter of filters; track filter) {
+  <app-list [type]="filter" [tasks]="filterTask(filter)"/>
+  }
+</section>
