@@ -45,4 +45,11 @@ export class HomeComponent {
   filterTask(type: string) {
     return this.tasks.filter((task: TaskModel) => task.status === type);
   }
+
+  onUpdateTask(data: { taskId: number; status: string }) {
+    const index = this.tasks.findIndex(
+      (task: TaskModel) => task.id === Number(data.taskId)
+    );
+    this.tasks[index].status = data.status as TaskStatusEnum;
+  }
 }

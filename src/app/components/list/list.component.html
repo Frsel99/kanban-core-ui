@@ -1,5 +1,9 @@
-<section class="kanban-list">
-  <h1 class="list-title"> {{ type }}</h1>
+<section
+  class="kanban-list"
+  (dragover)="onDragOver($event)"
+  (drop)="onDrop($event, type)"
+>
+  <h1 class="list-title">{{ type }}</h1>
   @for (task of tasks; track task.id) {
   <app-list-item [task]="task" />
   }
