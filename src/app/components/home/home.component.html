@@ -15,6 +15,10 @@
 </div>
 <section class="tasks-wrapper">
   @for (filter of filters; track filter) {
-  <app-list [type]="filter" [tasks]="filterTask(filter)"/>
+  <app-list
+    [type]="filter"
+    [tasks]="filterTask(filter)"
+    (updateTask)="onUpdateTask($event)"
+  />
   }
 </section>
